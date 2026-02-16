@@ -111,15 +111,15 @@ p {
     37.5% {
         background-color: #47df47;
         color: blueviolet;
-        border-top-right-radius: var(--btrr4);
-        border-top-left-radius: var(--btlr4);
-        border-bottom-right-radius: var(--bbrr4);
-        border-bottom-left-radius: var(--bblr4);
-        padding-left: var(--pl4);
-        padding-right: var(--pr4);
-        padding-top: var(--pt4);
-        padding-bottom: var(--pb4);
-        font-size: var(--fs4);
+        border-top-right-radius: var(--btrr);
+        border-top-left-radius: var(--btlr);
+        border-bottom-right-radius: var(--bbrr);
+        border-bottom-left-radius: var(--bblr);
+        padding-left: var(--pl);
+        padding-right: var(--pr);
+        padding-top: var(--pt);
+        padding-bottom: var(--pb);
+        font-size: var(--fs);
     }
     50% {
         background-color: #00bd00;
@@ -163,28 +163,28 @@ p {
     87.5% {
         background-color: purple;
         color: #47df47;
-        border-top-right-radius: var(--btrr2);
-        border-top-left-radius: var(--btlr2);
-        border-bottom-right-radius: var(--bbrr2);
-        border-bottom-left-radius: var(--bblr2);
-        padding-left: var(--pl2);
-        padding-right: var(--pr2);
-        padding-top: var(--pt2);
-        padding-bottom: var(--pb2);
-        font-size: var(--fs2);
+        border-top-right-radius: var(--btrr3);
+        border-top-left-radius: var(--btlr3);
+        border-bottom-right-radius: var(--bbrr3);
+        border-bottom-left-radius: var(--bblr3);
+        padding-left: var(--pl3);
+        padding-right: var(--pr3);
+        padding-top: var(--pt3);
+        padding-bottom: var(--pb3);
+        font-size: var(--fs3);
     }
     100% {
         background-color: red;
         color: #00bd00;
-        border-top-right-radius: var(--btrr);
-        border-top-left-radius: var(--btlr);
-        border-bottom-right-radius: var(--bbrr);
-        border-bottom-left-radius: var(--bblr);
-        padding-left: var(--pl);
-        padding-right: var(--pr);
-        padding-top: var(--pt);
-        padding-bottom: var(--pb);
-        font-size: var(--fs);
+        border-top-right-radius: var(--btrr4);
+        border-top-left-radius: var(--btlr4);
+        border-bottom-right-radius: var(--bbrr4);
+        border-bottom-left-radius: var(--bblr4);
+        padding-left: var(--pl4);
+        padding-right: var(--pr4);
+        padding-top: var(--pt4);
+        padding-bottom: var(--pb4);
+        font-size: var(--fs4);
     }
 }
 @keyframes rainbow-bg {

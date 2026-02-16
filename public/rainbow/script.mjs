@@ -20,7 +20,7 @@ setTimeout(() => {
             set[0]= temp
             a = "2";
         }
-        else if (a == "5") {
+        else if (a == "3") {
             set[a-1]= temp
             a = "";
         } else {
