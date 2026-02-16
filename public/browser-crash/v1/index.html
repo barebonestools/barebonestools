@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Crash v1</title>
+</head>
+<body>
+
+    <h1>Click the button below to crash your browser:</h1>
+    <button onclick="crashBrowser()">Crash Browser</button>
+
+    <script>
+        function crashBrowser() {
+            while (true) {
+                window.open("https://kittnlabs.web.app/browser-crash/v1/index.html")
+            }
+        }
+    </script>
+
+</body>
+</html>

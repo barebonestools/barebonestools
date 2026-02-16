@@ -1,0 +1,9 @@
+{
+  "projects": {
+    "default": "barebonestools",
+    "oldmain": "mainiac-c5e20",
+    "newoldmain": "kittnlabs"
+  },
+  "targets": {},
+  "etags": {}
+}

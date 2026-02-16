@@ -1,0 +1,71 @@
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    margin-top: 10rem;
+}
+body > * {
+    margin-bottom:2rem !important;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.togglewapper {
+    height: min-content;
+    width: min-content;
+    border-radius: 5px;
+    padding: 0.2rem;
+    flex-direction: row;
+    align-self: center;
+    margin:auto;
+    border: 0.1rem solid;
+    display: block;
+}
+input {
+    display: flex;
+}
+label {
+    margin-bottom: 12px; /* Added for spacing between label and input */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+h1{
+    font-size: 2.3em;
+}
+
+.bigbutt{
+    border: 0.5rem solid black;
+    font-size: 2rem;
+    border-radius: 0.5rem;
+    height: min-content;
+    width: min-content;
+    margin:auto;
+    padding:0.4rem 1.2rem;
+}
+.bigbutt:active {
+    transform: translateY(1px); /* Slight downward movement on click */
+}
+.wappon, .wappoff:hover, input{
+    background-color: white !important;
+    color:black !important;
+    transition: all 1s;
+}
+.wappoff, .wappon:hover{
+    background-color: black !important;
+    color:white !important;
+    transition: all 300ms;
+}
+.wappon .fade{
+    transition: all 4s;
+}

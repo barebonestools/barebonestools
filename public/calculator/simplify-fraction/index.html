@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fraction Simplifier</title>
+</head>
+<body>
+    <h1>Fraction Simplifier</h1>
+        <button onclick="superstart()">Click to start</button>
+    <script>
+        function actualFructionSimp(num, nom, passover) {
+            //make it return object
+            if (num>nom) {
+                actualFructionSimp(num%nom, nom, Math.trunc(num/nom))
+            }
+            let count = 1
+            let gcf = num/count
+            while ((nom % gcf !== 0 || Math.trunc(gcf) !== gcf) && count < num) {
+                count++
+                gcf = num/count
+            }
+            let fiddle 
+            if (passover) {
+                fiddle = "Your simplified fraction is: " + passover + " ";
+            } else if (gcf === 1) {
+                fiddle = "Already lowest terms! ";
+            } else {
+                fiddle = "Your simplified fraction is: ";
+            }
+            let newnum = num/gcf
+            let newnom = nom/gcf
+            return fiddle + newnum + "/" + newnom
+            
+        }
+        function superstart() {
+            let num = Number(prompt("Enter the numerator: "))
+            let nom = Number(prompt("Enter the denominator:")) 
+            alert(actualFructionSimp(num, nom))
+        }
+    </script>
+</body>
+</html>

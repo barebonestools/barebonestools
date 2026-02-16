@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <link href='/style.css' rel='stylesheet'>
+</head>
+<body>
+  <div id="storage" op1="" op2="" prator=""></div>
+  <div id="div1"style="display: flex; justify-content: center; align-items: center; height: 100vh; text-align: right; flex-direction: column;">
+    <h1 id="outpout"></h1>
+    <!--row 1-->
+    <button onclick="num(9)">9</button>
+  </div>
+  <script>
+    function num(inputty){
+        const Storage = document.getElementById("storage");
+        let meow;
+        if (Storage.getAttribute("prator")) {
+            meow = "op2";
+        } else {
+            meow = "op1";
+        }
+        Storage.setAttribute(meow,Storage.getAttribute(meow) + inputty) //concatenates the strings
+        putty(inputty)
+     }
+
+    function putty(inputty){
+      const outwindow = document.getElementById("outpout");
+      outwindow.innerHTML+= inputty
+    }
+  </script>
+</body>
+</html>

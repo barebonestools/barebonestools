@@ -1,0 +1,218 @@
+body {
+    animation-duration: 7s;
+    animation-name: rainbow-bg;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    display: flex;
+    align-items: center;;
+    font-family: "Fredoka", sans-serif;
+    height: 100vh;
+    margin: 0px;
+}
+p {
+    animation-duration: 7s;
+    animation-name: rainbow;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    height: min-content;
+    width: min-content;
+    margin:auto;
+    font-weight: bold;
+    --btrr: 10%;
+    --btlr: 10%;
+    --bbrr: 10%;
+    --bblr: 10%;
+    --pl: 10px;
+    --pr: 10px;
+    --pt: 10px;
+    --pb: 10px;
+    --fs: 40px;
+    /*end set*/
+    --btrr2: 20%;
+    --btlr2: 20%;
+    --bbrr2: 20%;
+    --bblr2: 20%;
+    --pl2: 20px;
+    --pr2: 20px;
+    --pt2: 20px;
+    --pb2: 20px;
+    --fs2: 50px;
+    /*end set*/
+    --btrr3: 10%;
+    --btlr3: 10%;
+    --bbrr3: 10%;
+    --bblr3: 10%;
+    --pl3: 10px;
+    --pr3: 10px;
+    --pt3: 10px;
+    --pb3: 10px;
+    --fs3: 40px;
+    /*end set*/
+    --btrr4: 10%;
+    --btlr4: 10%;
+    --bbrr4: 10%;
+    --bblr4: 10%;
+    --pl4: 10px;
+    --pr4: 10px;
+    --pt4: 10px;
+    --pb4: 10px;
+    --fs4: 40px;
+    /*end set*/
+    --btrr5: 10%;
+    --btlr5: 10%;
+    --bbrr5: 10%;
+    --bblr5: 10%;
+    --pl5: 10px;
+    --pr5: 10px;
+    --pt5: 10px;
+    --pb5: 10px;
+    --fs5: 40px;
+}
+@keyframes rainbow {
+    0% {
+        background-color: red;
+        color: #00bd00;
+        border-top-right-radius: var(--btrr);
+        border-top-left-radius: var(--btlr);
+        border-bottom-right-radius: var(--bbrr);
+        border-bottom-left-radius: var(--bblr);
+        padding-left: var(--pl);
+        padding-right: var(--pr);
+        padding-top: var(--pt);
+        padding-bottom: var(--pb);
+        font-size: var(--fs);
+    }
+    12.5% {
+        background-color: orange;
+        color: #00b9cd;
+        border-top-right-radius: var(--btrr2);
+        border-top-left-radius: var(--btlr2);
+        border-bottom-right-radius: var(--bbrr2);
+        border-bottom-left-radius: var(--bblr2);
+        padding-left: var(--pl2);
+        padding-right: var(--pr2);
+        padding-top: var(--pt2);
+        padding-bottom: var(--pb2);
+        font-size: var(--fs2);
+    }
+    25% {
+        background-color: yellow;
+        color: blue;
+        border-top-right-radius: var(--btrr3);
+        border-top-left-radius: var(--btlr3);
+        border-bottom-right-radius: var(--bbrr3);
+        border-bottom-left-radius: var(--bblr3);
+        padding-left: var(--pl3);
+        padding-right: var(--pr3);
+        padding-top: var(--pt3);
+        padding-bottom: var(--pb3);
+        font-size: var(--fs3);
+    }
+    37.5% {
+        background-color: #47df47;
+        color: blueviolet;
+        border-top-right-radius: var(--btrr4);
+        border-top-left-radius: var(--btlr4);
+        border-bottom-right-radius: var(--bbrr4);
+        border-bottom-left-radius: var(--bblr4);
+        padding-left: var(--pl4);
+        padding-right: var(--pr4);
+        padding-top: var(--pt4);
+        padding-bottom: var(--pb4);
+        font-size: var(--fs4);
+    }
+    50% {
+        background-color: #00bd00;
+        color: red;
+        border-top-right-radius: var(--btrr5);
+        border-top-left-radius: var(--btlr5);
+        border-bottom-right-radius: var(--bbrr5);
+        border-bottom-left-radius: var(--bblr5);
+        padding-left: var(--pl5);
+        padding-right: var(--pr5);
+        padding-top: var(--pt5);
+        padding-bottom: var(--pb5);
+        font-size: var(--fs5);
+    }
+    62.5% {
+        background-color: #00b9cd;
+        color: orange;
+        border-top-right-radius: var(--btrr);
+        border-top-left-radius: var(--btlr);
+        border-bottom-right-radius: var(--bbrr);
+        border-bottom-left-radius: var(--bblr);
+        padding-left: var(--pl);
+        padding-right: var(--pr);
+        padding-top: var(--pt);
+        padding-bottom: var(--pb);
+        font-size: var(--fs);
+    }
+    75% {
+        background-color: blue;
+        color: yellow;
+        border-top-right-radius: var(--btrr2);
+        border-top-left-radius: var(--btlr2);
+        border-bottom-right-radius: var(--bbrr2);
+        border-bottom-left-radius: var(--bblr2);
+        padding-left: var(--pl2);
+        padding-right: var(--pr2);
+        padding-top: var(--pt2);
+        padding-bottom: var(--pb2);
+        font-size: var(--fs2);
+    }
+    87.5% {
+        background-color: purple;
+        color: #47df47;
+        border-top-right-radius: var(--btrr2);
+        border-top-left-radius: var(--btlr2);
+        border-bottom-right-radius: var(--bbrr2);
+        border-bottom-left-radius: var(--bblr2);
+        padding-left: var(--pl2);
+        padding-right: var(--pr2);
+        padding-top: var(--pt2);
+        padding-bottom: var(--pb2);
+        font-size: var(--fs2);
+    }
+    100% {
+        background-color: red;
+        color: #00bd00;
+        border-top-right-radius: var(--btrr);
+        border-top-left-radius: var(--btlr);
+        border-bottom-right-radius: var(--bbrr);
+        border-bottom-left-radius: var(--bblr);
+        padding-left: var(--pl);
+        padding-right: var(--pr);
+        padding-top: var(--pt);
+        padding-bottom: var(--pb);
+        font-size: var(--fs);
+    }
+}
+@keyframes rainbow-bg {
+    0% {
+        background-color: blue;
+    }
+    12.5% {
+        background-color: blueviolet;
+    }
+    25% {
+        background-color: red;
+    }
+    37.5% {
+        background-color: orange;
+    }
+    50% {
+        background-color: yellow;
+    }
+    62.5% {
+        background-color: #47df47;
+    }
+    75% {
+        background-color: #00bd00;
+    }
+    87.5% {
+        background-color: #00b9cd;
+    }
+    100% {
+        background-color: blue;
+    }
+}
