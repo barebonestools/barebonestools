@@ -16,7 +16,6 @@ p {
     animation-timing-function: linear;
     height: min-content;
     width: min-content;
-    margin: auto;
     font-weight: bold;
     --btrr: 10%;
     --btlr: 10%;
@@ -26,6 +25,8 @@ p {
     --pr: 10px;
     --pt: 10px;
     --pb: 10px;
+    --mt: 10px;
+    --ml: 10px;
     --fs: 40px;
     /*end set*/
     --btrr2: 20%;
@@ -37,6 +38,8 @@ p {
     --pt2: 20px;
     --pb2: 20px;
     --fs2: 50px;
+    --mt2: 10px;
+    --ml2: 10px;
     /*end set*/
     --btrr3: 10%;
     --btlr3: 10%;
@@ -47,6 +50,8 @@ p {
     --pt3: 10px;
     --pb3: 10px;
     --fs3: 40px;
+    --mt3: 10px;
+    --ml3: 10px;
     /*end set*/
     --btrr4: 10%;
     --btlr4: 10%;
@@ -57,6 +62,8 @@ p {
     --pt4: 10px;
     --pb4: 10px;
     --fs4: 40px;
+    --mt4: 10px;
+    --ml4: 10px;
     /*end set*/
 }
 @keyframes rainbow {
@@ -71,6 +78,7 @@ p {
         padding-right: var(--pr);
         padding-top: var(--pt);
         padding-bottom: var(--pb);
+        transform: translate(var(--ml), var(--mt));
         font-size: var(--fs);
     }
     12.5% {
@@ -85,6 +93,7 @@ p {
         padding-top: var(--pt2);
         padding-bottom: var(--pb2);
         font-size: var(--fs2);
+        transform: translate(var(--ml2), var(--mt2));
     }
     25% {
         background-color: yellow;
@@ -98,6 +107,7 @@ p {
         padding-top: var(--pt3);
         padding-bottom: var(--pb3);
         font-size: var(--fs3);
+        transform: translate(var(--ml3), var(--mt3));
     }
     37.5% {
         background-color: #47df47;
@@ -111,6 +121,7 @@ p {
         padding-top: var(--pt4);
         padding-bottom: var(--pb4);
         font-size: var(--fs4);
+        transform: translate(var(--ml4), var(--mt4));
     }
     50% {
         background-color: #00bd00;
@@ -124,6 +135,7 @@ p {
         padding-top: var(--pt);
         padding-bottom: var(--pb);
         font-size: var(--fs);
+        transform: translate(var(--ml), var(--mt));
     }
     62.5% {
         background-color: #00b9cd;
@@ -137,6 +149,7 @@ p {
         padding-top: var(--pt2);
         padding-bottom: var(--pb2);
         font-size: var(--fs2);
+        transform: translate(var(--ml2), var(--mt2));
     }
     75% {
         background-color: blue;
@@ -150,6 +163,7 @@ p {
         padding-top: var(--pt3);
         padding-bottom: var(--pb3);
         font-size: var(--fs3);
+        transform: translate(var(--ml3), var(--mt3));
     }
     87.5% {
         background-color: purple;
@@ -163,6 +177,7 @@ p {
         padding-top: var(--pt4);
         padding-bottom: var(--pb4);
         font-size: var(--fs4);
+        transform: translate(var(--ml4), var(--mt4));
     }
     100% {
         background-color: red;
@@ -176,6 +191,7 @@ p {
         padding-top: var(--pt);
         padding-bottom: var(--pb);
         font-size: var(--fs);
+        transform: translate(var(--ml), var(--mt));
     }
 }
 @keyframes rainbow-bg {

@@ -16,7 +16,10 @@ setTimeout(() => {
         --pr${a}: ${plpr}px;
         --pt${a}: ${ptpb}px;
         --pb${a}: ${ptpb}px;
-        --fs${a}: ${util.betterand(60, 120)}px;`;
+        --fs${a}: ${util.betterand(60, 120)}px;
+        --mt${a}: ${util.betterand(10, window.innerHeight-(144.8+ptpb*2))}px;
+        --ml${a}: ${util.betterand(10, window.innerWidth-(484.2+plpr*2))}px;
+        `;
         console.log("helloe");
         if (a == "") {
             set[0] = temp;
