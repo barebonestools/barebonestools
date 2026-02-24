@@ -3,20 +3,21 @@ body {
     animation-name: rainbow-bg;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    display: flex;
-    align-items: center;
     font-family: "Fredoka", sans-serif;
     height: 100vh;
     margin: 0px;
 }
 p {
-    animation-duration: 7s;
+    animation-duration: 10s;
     animation-name: rainbow;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     height: min-content;
     width: min-content;
     font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     --btrr: 10%;
     --btlr: 10%;
     --bbrr: 10%;
@@ -26,7 +27,7 @@ p {
     --pt: 10px;
     --pb: 10px;
     --mt: 10px;
-    --ml: 10px;
+    --ml: 0px;
     --fs: 40px;
     /*end set*/
     --btrr2: 20%;
@@ -41,10 +42,10 @@ p {
     --mt2: 10px;
     --ml2: 10px;
     /*end set*/
-    --btrr3: 10%;
-    --btlr3: 10%;
+    --btrr3: 30%;
+    --btlr3: 20%;
     --bbrr3: 10%;
-    --bblr3: 10%;
+    --bblr3: 30%;
     --pl3: 10px;
     --pr3: 10px;
     --pt3: 10px;
