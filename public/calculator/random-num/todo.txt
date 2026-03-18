@@ -1,0 +1,5 @@
+keyborad fouc
+make link be in ohver state while focused
+add copy button
+add default inputs
+change cursor

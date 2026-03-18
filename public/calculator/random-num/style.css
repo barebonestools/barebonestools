@@ -9,7 +9,7 @@ body {
     margin-top: 10rem;
 }
 body > * {
-    margin-bottom:2rem !important;
+    margin-bottom:1.5rem !important;
 }
 
 .container {
@@ -32,6 +32,11 @@ body > * {
 }
 input {
     display: flex;
+    height: calc(1em + 7px);
+    width: calc(5ch + 10px);
+    border-color:black;
+    border-radius: 5px;
+    font-family: "Comfortaa", sans-serif;
 }
 label {
     margin-bottom: 12px; /* Added for spacing between label and input */
@@ -42,6 +47,7 @@ label {
 }
 h1{
     font-size: 2.3em;
+    font-weight: bold;
 }
 
 .bigbutt{
@@ -49,12 +55,10 @@ h1{
     font-size: 2rem;
     border-radius: 0.5rem;
     height: min-content;
-    width: min-content;
+    width: fit-content;
     margin:auto;
     padding:0.4rem 1.2rem;
-}
-.bigbutt:active {
-    transform: translateY(1px); /* Slight downward movement on click */
+    
 }
 .wappon, .wappoff:hover, input{
     background-color: white !important;
@@ -68,4 +72,7 @@ h1{
 }
 .wappon .fade{
     transition: all 4s;
+}
+#link{
+    margin-bottom: 1.5rem !important;
 }
