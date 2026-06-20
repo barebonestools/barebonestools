@@ -2,7 +2,6 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    font-family: "Comfortaa", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -10,6 +9,7 @@ body {
 }
 body > * {
     margin-bottom:1.5rem !important;
+    font-family: "Comfortaa", sans-serif;
 }
 
 .container {
@@ -21,22 +21,27 @@ body > * {
 
 .togglewapper {
     height: min-content;
-    width: min-content;
+    width: fit-content;
     border-radius: 5px;
     padding: 0.2rem;
     flex-direction: row;
     align-self: center;
     margin:auto;
-    border: 0.1rem solid;
+    border: 1.8px solid black;
     display: block;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1em;
 }
 input {
     display: flex;
     height: calc(1em + 7px);
-    width: calc(5ch + 10px);
+    padding:5px;
+    width: 10ch;
     border-color:black;
     border-radius: 5px;
     font-family: "Comfortaa", sans-serif;
+    font-size:1.2em;
 }
 label {
     margin-bottom: 12px; /* Added for spacing between label and input */
@@ -46,32 +51,49 @@ label {
     align-items: center;
 }
 h1{
-    font-size: 2.3em;
+    font-size: 3em;
     font-weight: bold;
 }
 
 .bigbutt{
     border: 0.5rem solid black;
-    font-size: 2rem;
+    font-size: 2.3rem;
     border-radius: 0.5rem;
     height: min-content;
     width: fit-content;
     margin:auto;
-    padding:0.4rem 1.2rem;
-    
+    padding:10px 20px;
+    font-family: "Comfortaa", sans-serif;
+    cursor: pointer;
 }
-.wappon, .wappoff:hover, input{
+#result{
+    max-width:80vw;
+    font-size:2.2rem;
+    cursor:unset;
+    padding:10px;
+    border-width: 1.6px;
+    display:none;
+}
+.show{
+    display:block !important;
+}
+.wappon, .wappoff:hover, .wappoff:active, input{
     background-color: white !important;
     color:black !important;
-    transition: all 1s;
+    transition: all 450ms;
 }
-.wappoff, .wappon:hover{
+/*wappon & wappoff should be switched for all purposes*/
+.wappoff, .wappon:hover, .wappon:active{
     background-color: black !important;
     color:white !important;
-    transition: all 300ms;
+    transition: all 450ms;
 }
-.wappon .fade{
-    transition: all 4s;
+.wappoffy{
+    background-color: black !important;
+    color:white !important;
+}
+.fade{
+    transition: all 1s;
 }
 #link{
     margin-bottom: 1.5rem !important;

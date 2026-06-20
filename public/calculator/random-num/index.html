@@ -15,24 +15,26 @@
         <div class="container">
             <div>
                  <label>
-                    minimum (inclusive)
-                    <input id="minimum"type="number"/>
+                    lower limit (inclusive)
+                    <input id="minimum"type="number"value="1"/>
                  </label>
             </div>
             <div>
                 <label>
-                   maximum (inclusive)
-                   <input id="maximum" type="number"/>
+                   upper limit (inclusive)
+                   <input id="maximum" type="number"value="10"/>
                 </label>
            </div>
            <div>
             <label>
                number of random numbers to generate
-               <input id="numbers" type="number"/>
+               <input id="numbers" type="number"value="1"/>
             </label>
        </div>
     </div>
-    <a class="togglewapper wappon" id="link"href="./simple.html">Advanced&nbsp;mode:&nbsp;on</a>
-    <p class="bigbutt wappon" id="result">Go!</p>    
+    <a class="togglewapper wappoff" id="link"href="./simple.html">Advanced&nbsp;mode:&nbsp;on</a>
+    <button type="button"id="bigbutt" tabindex="0"class="bigbutt wappon">Go!</button>
+    <div id="result" class="togglewapper"></div>
+    <button class="togglewapper wappon" id="capy"tabindex="0">Copy to clipboard</button>
 </body>
 </html>

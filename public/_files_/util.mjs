@@ -26,7 +26,7 @@
         return Math.trunc( (verimax+1)*(Math.random()) )
     },
     betterand(min,max){
-        //min is inclusive!!
+        //min & max are inclusive!!
         console.log(this.simplrand(max-min)+min)
         return this.simplrand(max-min)+min
     }
