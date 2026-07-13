@@ -1,8 +1,38 @@
 import util from "../../_files_/util.mjs"
 const result=document.getElementById("result")
 const capybara = document.getElementById("capy")
+const bigbutt = document.getElementById("bigbutt")
 capybara.addEventListener("click",capyToBoard)
 document.getElementById("bigbutt").addEventListener("click",clickButt)
+let keydowntime
+window.addEventListener("keyup",(e)=>{
+    if(e.key==="Enter"){
+        function removeWappy(){
+            bigbutt.classList.remove("wappoff")
+        }
+        if (keydowntime==undefined) {
+            return
+        }else{
+            if(e.timeStamp-keydowntime>400){
+                removeWappy()
+            }else{
+                setTimeout(removeWappy,400-(e.timeStamp-keydowntime))
+            }
+        }
+    }
+})
+window.addEventListener("keydown",(e)=>{
+    if(e.key==="Enter"){
+        if (e.repeat) {
+        e.preventDefault();
+        return;
+        }
+        keydowntime = e.timeStamp
+        clickButt()
+        bigbutt.classList.add("wappoff")
+    }
+})
+
 let thingy
 function clickButt(){
     const minimum = Number(document.getElementById("minimum").value)
