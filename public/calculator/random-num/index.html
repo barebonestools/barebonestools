@@ -8,43 +8,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=help,home,info&display=block" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1&icon_names=close,help,home,info&display=block" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="../../_files_/icons/dice.svg">
 </head>
 <body>
         <script src="./script.mjs" type="module"></script>
-        <h1>Random Number Generator</h1>
+        <h1 id="title">Random Number Generator</h1>
         <div class="container">
             <div>
                  <label>
-                    lower limit (inclusive)
+                    minimum (inclusive)
                     <input id="minimum"type="number"value="1"/>
                  </label>
             </div>
             <div>
                 <label>
-                   upper limit (inclusive)
+                   maximum (inclusive)
                    <input id="maximum" type="number"value="10"/>
                 </label>
            </div>
            <div>
             <label>
-               number of random numbers to generate
+               numbers to generate
                <input id="numbers" type="number"value="1"/>
             </label>
        </div>
     </div>
-    <a class="togglewapper wappoff" id="link"href="./simple.html">Advanced&nbsp;mode:&nbsp;on</a>
     <button type="button"id="bigbutt" tabindex="0"class="bigbutt wappon">Go!</button>
     <div id="result" class="togglewapper"></div>
     <button class="togglewapper wappon" id="capy"tabindex="0">Copy to clipboard</button>
     <div class="navbar">
       <a href="../../index.html" class="navlink"><span class="material-symbols-rounded">home</span></a>
-        &middot;
-      <span>
+       <span id="dot">&middot;</span>
+      <button class="navlink" tabindex="0" id="intrig">
          <span class="material-symbols-rounded">info</span>
-         /
+         <span id="slash">/</span>
          <span class="material-symbols-rounded">help</span>
-      </span>
+      </button>
    </div>
+   <dialog id="inhel" closedby="any">
+      <div class="headwrap">
+      <h2 id="inhead">About/FAQ</h2>
+       <button class="dialog-close" type="button"commandfor="inhel" command="close" aria-label="Close">
+         <span class="material-symbols-rounded">close</span>
+       </button>
+      </div>
+      <h3>Why does it say "Invalid inputs"?</h3>
+      <ol>
+         <li>The lower limit is greater than the upper limit.</li>
+         <li>The number of random numbers to generate is less than zero.</li>
+         <li>There are decimals, which are not currently supported (<a href="mailto:hi@barebonestools.anonaddy.me">shoot me an email</a> and I'll add it!)</li>
+      </ol>
+      <h3>What does inclusive mean?</h3>
+      <p>Inclusive means that the lower and upper limits are included in the range of numbers that can be generated. For example, if you set the lower limit to 1 and the upper limit to 10, the random number generator can generate any number from 1 to 10, including both 1 and 10.</p>
+      <h3>Are there any keyboard shortcuts?</h3>
+      <p>Yes, you can use [Tab] and [Shift]+[Tab] to navigate between the input fields, the links, and the buttons and [Enter] to either click the current (focused) link/button or click the go button, if the focus is not on a button/link.</p>
+      <h2 class="secthead">Feedback</h2>
+      <a id="feedback-link" href="mailto:hi@barebonestools.anonaddy.me">Click here to send me an email!</a>
+      <p>Suggestions, problems, ideas and feedback are all welcome!</p>
+   </dialog>
 </body>
 </html>

@@ -5,17 +5,23 @@ body {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    margin-top: 10rem;
+    margin-top:11vh;
+    /*
+    align-content: center;
+    margin: 0;
+    height: 100dvh;
+    */
 }
-body > * {
+body > *:not(#inhel){
     margin-bottom:1.5rem !important;
+}
+body > *{
     font-family: "Comfortaa", sans-serif;
 }
-
 .container {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    column-gap: 5rem;
     flex-wrap: wrap;
 }
 
@@ -50,9 +56,11 @@ label {
     text-align: center;
     align-items: center;
 }
-h1{
+h1#title{
     font-size: 3em;
     font-weight: bold;
+    margin-top:0px;
+    margin-bottom:5vh !important;
 }
 
 .bigbutt{
@@ -77,16 +85,31 @@ h1{
 .show{
     display:block !important;
 }
-.wappon, .wappoff:hover, .wappoff:active, input{
+@media(hover:hover){
+    .wappoff:hover{
     background-color: white !important;
     color:black !important;
-    transition: all 450ms;
-}
-/*wappon & wappoff should be switched for all purposes*/
-.wappoff, .wappon:hover, .wappon:active{
+    transition: all 300ms;
+    }
+    .wappon:hover{
     background-color: black !important;
     color:white !important;
-    transition: all 450ms;
+    transition: all 300ms;
+    }
+    .navlink:hover{
+        font-variation-settings: 'FILL' 1;
+    }
+}
+.wappon, .wappoff:active,.wappoff:focus-visible, input{
+    background-color: white !important;
+    color:black !important;
+    transition: all 300ms;
+}
+/*wappon & wappoff should be switched for all purposes*/
+.wappoff, .wappon:active,.wappon:focus-visible{
+    background-color: black !important;
+    color:white !important;
+    transition: all 300ms;
 }
 .wappoffy{
     background-color: black !important;
@@ -97,4 +120,106 @@ h1{
 }
 #link{
     margin-bottom: 1.5rem !important;
+}
+a :not(#inhel > *){
+    text-decoration: none;
+    color: black;
+}
+.navlink{
+    cursor: pointer;
+}
+
+.navbar .material-symbols-rounded,
+.navbar span,
+.navbar .navlink {
+    vertical-align: middle;
+    line-height: 1;
+}
+.navbar{
+    user-select: none;
+}
+.navlink:focus-visible{
+    font-variation-settings: 'FILL' 1;
+}
+.navlink{    
+    transition: font-variation-settings 150ms;
+    font-variation-settings: 'FILL' 0;
+}
+
+#inhel {
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width:60vw;
+    max-height: 80vh;
+    text-align: left;
+    --bm:16px;
+    --lm:10px;
+}
+/* working on this
+_______________________ */
+@media (orientation: portrait) {
+  #inhel {
+    max-height: 70dvh;
+    max-width:70dvw;
+  }
+}
+#inhel::backdrop {
+    background: rgba(0, 0, 0, 0.25);
+}
+#slash, #dot{
+    font-family: "Comfortaa", sans-serif;
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.dialog-close {
+    display: inline;
+    /* text-align: right; */
+    cursor: pointer;
+    margin:0px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+}
+#inhead{
+    text-align: center;
+    margin:auto;
+}
+
+button{
+    border: none;
+    background-color:transparent;
+}
+h3{
+    font-size:1rem;
+    text-align:left;
+    margin:0px 0px 5px;
+    font-weight:700;
+}
+li{
+    text-align:left;
+}
+ol{
+    margin:0px;
+    margin-bottom:var(--bm);
+    margin-left:var(--lm);
+    list-style-position: inside;
+    padding-left: 0px;
+}
+p{
+    margin:0px;
+    margin-bottom:var(--bm);
+    margin-left:var(--lm);
+}
+.headwrap{
+    position: relative;
+}
+.secthead{
+    text-align: center;
+    width: stretch;
+}
+#feedback-link{
+    margin-left: var(--lm);
 }

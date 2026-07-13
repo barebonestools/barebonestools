@@ -2,11 +2,17 @@ import util from "../../_files_/util.mjs"
 const result=document.getElementById("result")
 const capybara = document.getElementById("capy")
 const bigbutt = document.getElementById("bigbutt")
+const intrig=document.getElementById("intrig")
+const inhel=document.getElementById("inhel")
+intrig.addEventListener("click",()=>{
+    inhel.showModal()
+})
 capybara.addEventListener("click",capyToBoard)
 document.getElementById("bigbutt").addEventListener("click",clickButt)
 let keydowntime
+let realpress=false
 window.addEventListener("keyup",(e)=>{
-    if(e.key==="Enter"){
+    if(realpress){
         function removeWappy(){
             bigbutt.classList.remove("wappoff")
         }
@@ -22,12 +28,14 @@ window.addEventListener("keyup",(e)=>{
     }
 })
 window.addEventListener("keydown",(e)=>{
-    if(e.key==="Enter"){
+    const act = document.activeElement
+        if(e.key==="Enter"&&act.tagName!=="A"&&act.tagName!=="BUTTON"){
         if (e.repeat) {
         e.preventDefault();
         return;
         }
         keydowntime = e.timeStamp
+        realpress=true
         clickButt()
         bigbutt.classList.add("wappoff")
     }
