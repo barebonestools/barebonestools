@@ -16,7 +16,7 @@ body > *:not(#inhel){
     margin-bottom:1.5rem !important;
 }
 body > *{
-    font-family: "Comfortaa", sans-serif;
+    font-family: "fredoka", sans-serif;
 }
 .container {
     display: flex;
@@ -46,7 +46,7 @@ input {
     width: 10ch;
     border-color:black;
     border-radius: 5px;
-    font-family: "Comfortaa", sans-serif;
+    font-family: "fredoka", sans-serif;
     font-size:1.2em;
 }
 label {
@@ -71,7 +71,7 @@ h1#title{
     width: fit-content;
     margin:auto;
     padding:10px 20px;
-    font-family: "Comfortaa", sans-serif;
+    font-family: "fredoka", sans-serif;
     cursor: pointer;
 }
 #result{
@@ -168,7 +168,7 @@ _______________________ */
     background: rgba(0, 0, 0, 0.25);
 }
 #slash, #dot{
-    font-family: "Comfortaa", sans-serif;
+    font-family: "fredoka", sans-serif;
     font-size: 1.2rem;
     font-weight:bold;
 }
