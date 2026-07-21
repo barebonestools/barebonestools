@@ -65,5 +65,8 @@ node_modules/
 # dotenv environment variables file
 .env
 
+# SOFA credentials
+.sofa/
+
 # dataconnect generated files
 .dataconnect
