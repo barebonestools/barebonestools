@@ -218,7 +218,12 @@ p{
 }
 .secthead{
     text-align: center;
-    width: stretch;
+    width: 100%;
+}
+@supports (width: stretch) {
+    .secthead {
+        width: stretch;
+    }
 }
 #feedback-link{
     margin-left: var(--lm);
