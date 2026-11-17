@@ -29,5 +29,17 @@
         //min & max are inclusive!!
         console.log(this.simplrand(max-min)+min)
         return this.simplrand(max-min)+min
+    },
+    clamp(value, min, max) {
+        if (typeof value !== 'number' || typeof min !== 'number' || typeof max !== 'number') {
+            throw new TypeError('clamp expects numeric values.');
+        }
+        if (!Number.isFinite(value) || !Number.isFinite(min) || !Number.isFinite(max)) {
+            throw new TypeError('clamp expects finite numbers.');
+        }
+        if (min > max) {
+            throw new RangeError('clamp requires min to be less than or equal to max.');
+        }
+        return Math.min(Math.max(value, min), max);
     }
 }
