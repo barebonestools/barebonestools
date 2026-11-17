@@ -1,1 +1,1 @@
-A simple HTML/JS/CSS starter template
+The source code for barebonestools.web.app, a collection of helpful, minimalistic web tools.
